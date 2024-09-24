@@ -35,7 +35,9 @@ We will create:
    
     Private instances will have HTTP installed using user-data.
         
- State Locking: Leverage S3 and DynamoDB for state locking to ensure safe collaboration and version control.
+ State Locking: 
+ 
+    Leverage S3 and DynamoDB for state locking to ensure safe collaboration and version control.
 
 We are working in another workspace named "dev" instead of the "default" workspace:
 ![Screenshot 2024-09-25 024054](https://github.com/user-attachments/assets/70ea988a-135f-464d-9f79-d0e2e5ee304f)
