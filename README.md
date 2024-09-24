@@ -6,21 +6,22 @@ In this project, I’ll guide you through deploying an entire AWS infrastructure
 🛠️ Project Overview
 
 We will create:
-    VPC: A Virtual Private Cloud with a 10.0.0.0/16 CIDR block.
-    AZs: Two availability zones (AZs) to distribute resources.
-    Subnets: Public and private subnets across AZs:
+
+ VPC: A Virtual Private Cloud with a 10.0.0.0/16 CIDR block.
+ AZs: Two availability zones (AZs) to distribute resources.
+ Subnets: Public and private subnets across AZs:
         Public Subnets: 10.0.0.0/24 and 10.0.2.0/24
         Private Subnets: 10.0.1.0/24 and 10.0.3.0/24
-    EC2 Instances: Four EC2 instances:
+ EC2 Instances: Four EC2 instances:
         2 in public subnets with NGINX configured as a reverse proxy.
         2 in private subnets with HTTP services running.
-    Load Balancers:
+ Load Balancers:
         Network Load Balancer (NLB) for the public instances.
         Application Load Balancer (ALB) for the private instances.
-    Provisioning:
+ Provisioning:
         Public instances will have NGINX installed via file and remote-exec provisioners.
         Private instances will have HTTP installed using user-data.
-    State Locking: Leverage S3 and DynamoDB for state locking to ensure safe collaboration and version control.
+ State Locking: Leverage S3 and DynamoDB for state locking to ensure safe collaboration and version control.
 
 We are working in another workspace named "dev" instead of the "default" workspace:
 ![Screenshot 2024-09-25 024054](https://github.com/user-attachments/assets/70ea988a-135f-464d-9f79-d0e2e5ee304f)
