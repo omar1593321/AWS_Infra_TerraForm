@@ -19,21 +19,21 @@ We will create:
         
  EC2 Instances: Four EC2 instances:
  
-   2 in public subnets with NGINX configured as a reverse proxy.
+    2 in public subnets with NGINX configured as a reverse proxy.
    
-   2 in private subnets with HTTP services running.
+    2 in private subnets with HTTP services running.
        
  Load Balancers:
  
-   Network Load Balancer (NLB) for the public instances.
+    Network Load Balancer (NLB) for the public instances.
    
-   Application Load Balancer (ALB) for the private instances.
+    Application Load Balancer (ALB) for the private instances.
         
  Provisioning:
  
-   Public instances will have NGINX installed via file and remote-exec provisioners.
+    Public instances will have NGINX installed via file and remote-exec provisioners.
    
-   Private instances will have HTTP installed using user-data.
+    Private instances will have HTTP installed using user-data.
         
  State Locking: Leverage S3 and DynamoDB for state locking to ensure safe collaboration and version control.
 
