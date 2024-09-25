@@ -39,6 +39,9 @@ We will create:
  
     Leverage S3 and DynamoDB for state locking to ensure safe collaboration and version control.
 
+A GIF showing the complete setup we are going to make:
+![Animation](https://github.com/user-attachments/assets/28974539-460b-4ca2-98c8-2aacc37181ae)
+
 We are working in another workspace named "dev" instead of the "default" workspace:
 ![Screenshot 2024-09-25 024054](https://github.com/user-attachments/assets/70ea988a-135f-464d-9f79-d0e2e5ee304f)
 
