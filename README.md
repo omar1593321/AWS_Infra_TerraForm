@@ -13,9 +13,9 @@ We will create:
  
  Subnets: Public and private subnets across AZs:
 
-    Public Subnets: 10.0.0.0/24 and 10.0.1.0/24
+    Public Subnets: 10.0.0.0/24 and 10.0.2.0/24
    
-    Private Subnets: 10.0.2.0/24 and 10.0.3.0/24
+    Private Subnets: 10.0.1.0/24 and 10.0.3.0/24
         
  EC2 Instances: Four EC2 instances:
  
